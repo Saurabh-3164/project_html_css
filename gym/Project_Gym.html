@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym</title>
+    <style>
+
+        body{
+            background-image: url("bg3.jpg");
+            background-repeat:repeat;
+            background-size: cover;
+            height: 1000px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 90px;
+        top: 29px;
+        margin-left: 5px;
+        color: red;
+        /* background-image: url("fitness-1882721_1280.jpg"); */
+        /* background-size: cover; */
+    }
+    .left img{
+        width: 136px;
+        /* filter: invert(100%); */
+
+    }
+.left div{
+    margin-left: 40px;
+    color: chocolate;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    .mid {
+        color: red;
+        /* display: block; */
+        width: 33%;
+        border: 1px solid green;
+        margin: 29px auto;
+        border-radius: 10px;
+    }
+.right {
+    color:red;
+        position: absolute;
+        right: 24px;
+        top: 29px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    ul{
+        list-style-type: none;
+        margin: 8px;
+        display: flex;
+    flex-direction:row;
+    text-transform: uppercase;
+    }
+    .navbar li a{
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+    }
+.tab{
+    text-decoration: none;
+    margin-left: 15px;
+    color: blueviolet;
+}
+.tab:hover{
+    color: aqua;
+}
+.tab.active{
+    text-decoration: underline;
+    color:chartreuse;
+}
+.details{
+    width: 350px;
+    height: 400px;
+    margin: auto;
+ 
+    margin-top: 100px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.in{
+    margin-left: 30px;
+    position: absolute;
+    border: 2px solid blueviolet ;
+    border-radius: 10px;
+    /* margin-right: 20px; */
+    /* position: absolute; */
+}
+.item{
+    margin-top: 30px;
+color: rgb(190, 217, 10);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-style: bold;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="left" >
+            <img src="fitness-1882721_1280-removebg-preview.png" alt="">
+            <div>Saurabh Fitness</div>
+        </div>
+        <div  class="mid" >
+            <ul class="navbar">
+                <li><a href=""# class="tab active">Home</a></li>
+                <li><a href="#" class="tab">About us</a></li>
+                <li><a href="#" class="tab">fees structure</a></li>
+                <li><a href="#" class="tab">Contact us</a></li>
+            </ul>
+        </div>
+     </header>
+</div>
+<div  class="details">
+   <div class="item">
+    <label >Enter Your name -</label>
+    <input type="text" class="in" placeholder="Name">
+   </div>
+   <div class="item">
+   <label >Enter Your Email -</label>
+   <input type="text" class="in" placeholder="someone@gmail.com">
+  </div>
+  <div class="item">
+  <label >Enter  contact no. -</label>
+  <input type="text" class="in" placeholder="+91xxxxxxxx">
+ </div class="item">
+ <div class="item">
+ <label >Enter Your address -</label>
+    <input type="text" class="in" placeholder="village ..">
+   </div>
+</div>
+</body>
+</html>
